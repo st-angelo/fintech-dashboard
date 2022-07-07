@@ -1,4 +1,13 @@
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
+
+html {
+  @apply text-tar;
+}
+
+body {
+  @apply min-h-screen;
+}
+
 @tailwind components;
 @tailwind utilities;

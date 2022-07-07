@@ -1,6 +1,9 @@
 <script lang="ts">
+  import Nav from './lib/Nav.svelte';
 </script>
 
-<main>
-  <h1 class="m-auto text-5xl font-extrabold text-red-500">#TODO</h1>
+<header />
+
+<main class="h-screen">
+  <Nav />
 </main>
