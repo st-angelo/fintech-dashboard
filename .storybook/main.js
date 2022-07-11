@@ -1,4 +1,9 @@
+const preprocess = require('svelte-preprocess');
+
 module.exports = {
+  core: {
+    builder: '@storybook/builder-vite',
+  },
   stories: [
     '../src/**/*.stories.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)',
@@ -7,15 +12,16 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-svelte-csf',
+    '@storybook/addon-storysource',
+    '@storybook/addon-a11y',
   ],
   framework: '@storybook/svelte',
-  core: {
-    builder: '@storybook/builder-vite',
-  },
   svelteOptions: {
-    preprocess: import('../svelte.config.js').preprocess,
-  },
-  features: {
-    storyStoreV7: true,
+    preprocess: preprocess({
+      typescript: true,
+      postcss: true,
+      sourceMap: true,
+    }),
   },
 };

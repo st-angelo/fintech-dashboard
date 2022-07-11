@@ -117,7 +117,7 @@
 </script>
 
 <nav
-  class="relative flex h-full w-80 flex-col gap-20 border-r-2 border-lilac-200 bg-lilac-100 px-7 py-10"
+  class="relative flex h-full w-96 flex-col gap-20 border-r-2 border-lilac-200 bg-lilac-100 px-7 py-10"
 >
   <div class="flex items-center gap-3">
     <span class="w-6"><Logo /></span>
@@ -126,7 +126,7 @@
   <NavMenu name="Main Navigation" items={mainMenuItems} />
   <NavMenu name="Settings & Schedules" items={settingsAndSchedulesMenuItems} />
   <div class="flex grow flex-col justify-end"><HelpCard /></div>
-  <div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+  <div class="shape-wrapper">
     <div
       class="absolute -bottom-52 -left-2 h-80 w-80 rounded-full bg-ghost-white opacity-60 shadow-[0_5px_20px_5px_rgba(0,0,0,0.1)]"
     />

@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Storybook build output
+storybook-static
+
 # The color palette
 palette.txt

@@ -13,6 +13,7 @@ const config = {
         'ghost-white': 'rgba(248, 249, 253, 1)',
         'silver-200': 'rgba(204, 204, 212, 1)',
         'silver-400': 'rgba(173, 173, 173, 1)',
+        'silver-700': 'rgba(132, 133, 140, 1)',
         'gold-200': 'rgba(195, 187, 182, 1)',
         'gold-400': 'rgba(180, 170, 158, 1)',
         'gold-1k': 'rgba(52, 42, 17, 1)',
